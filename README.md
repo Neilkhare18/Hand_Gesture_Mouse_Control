@@ -62,7 +62,7 @@ flowchart TD
 ## ⚡ Quick Start
 
 ### Option 1: Single-Click Launch (Recommended)
-**Simply double-click **[`run.bat`](run.bat)** (or run **`run.ps1`** in PowerShell):**
+**Download zip and Simply double-click **[`run.bat`](run.bat)** (or run **`run.ps1`** in PowerShell):**
 * It automatically detects Python on your computer (`python`, `py -3`, WindowsApps, or custom paths).
 * Automatically checks and installs any missing dependencies on first launch.
 * Launches the application immediately.
