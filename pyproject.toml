@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hand-gesture-mouse-control"
+version = "1.2.0"
+description = "Touchless Human-Computer Interaction (HCI) system translating bare-hand webcam gestures into real-time OS mouse control."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Hand Gesture Mouse Contributors" }
+]
+keywords = [
+    "computer-vision",
+    "mediapipe",
+    "opencv",
+    "gesture-recognition",
+    "human-computer-interaction",
+    "touchless-mouse",
+    "one-euro-filter",
+    "accessibility"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Scientific/Engineering :: Human Machine Interfaces",
+]
+dependencies = [
+    "opencv-python>=4.10.0",
+    "mediapipe>=0.10.14",
+    "numpy>=1.26.0",
+    "pyautogui>=0.9.54",
+    "pynput>=1.7.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pyinstaller>=6.0",
+]
+
+[project.scripts]
+hand-mouse = "main:main"
